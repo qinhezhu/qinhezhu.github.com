@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name"></h1> 
+
+    <h2>Click the button to eneter a number.</h2>
+
+    <button onclick="myNum()">Click</button>
+    <p>Check console to see your result!</p>
+
+</body>
+
+<script>
+    //this page is say hi to user with their name shown on screen. And if user wants to check
+    //a number even or odd they can ckick the button
+
+    //user input
+    var yourName = prompt("Please enter your name", " ");
+
+if (yourName!= null) {
+
+document.getElementById("name").innerHTML =
+
+"Hello " + yourName + "! How are you today?";
+
+document.getElementById("name").style.color="pink"; //DOM experimentation
+}
+
+//user input a number
+ function myNum(){
+    var myNum= prompt("Please type in a number", "");
+
+    if (myNum %2==0) { //if the number can divided by 2
+        console.log("The number you enter is even.");
+    }
+    else{
+        console.log("The number you enter is odd.");
+    }
+    for (var i=0; i<20; i++){  //prints number in console
+        if (i%2===0){  //if not
+            console.log(i+ "is an example of even number");
+        }
+        else{
+            console.log(i+ "is an example of odd number");
+        }
+    }
+ }
+
+ function recAre(width, height) {  //caculate the area of a rect
+  if (width > 0 && height > 0) {
+    return width * height;
+  }
+  return 0;               //return a value
+}
+
+console.log(`The area of the rectangle is ${recAre(7, 10)}`);
+
+
+
+
+</script>
+</html>
