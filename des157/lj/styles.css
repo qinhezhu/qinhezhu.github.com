@@ -1,0 +1,68 @@
+body{
+    background-color: black;
+}
+
+header{
+    margin-top: 30px;
+    margin-bottom: 80px;
+    text-align: center;
+    color: palevioletred;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+h1{
+font-size: 60px;
+}
+
+article{
+    width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    border-style: dashed;
+    border-color: lightcyan;
+    border-radius: 4%;
+    background-color: lightpink;
+}
+
+h2{
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
+    color:darkslateblue;
+}
+
+p{
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 19px;
+    color:rgb(62, 62, 62);
+    line-height: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+.button{
+    margin-bottom: 30px;
+    border-style: dashed palevioletred ;
+    background-color: palevioletred;
+    border-radius: 25px;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+
+
+}
+footer{
+    width: 800px;
+    height: fit-content;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+}
+footer a{
+    color: white;
+}
