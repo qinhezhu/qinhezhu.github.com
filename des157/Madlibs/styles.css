@@ -1,0 +1,162 @@
+body{
+    background : #FFC0CB;
+ 
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+article{
+    font-family: 'Mansalva', cursive;
+
+    text-align: center;
+}
+#back
+{
+    margin: auto;
+    margin-top: 50px;
+    width: 600px;
+    padding: 3% 8%;
+  background : #FFEBEC;
+  background : rgba(255, 235, 236, 1);
+  opacity : 0.69;
+  border: 0.5px solid rgba(255, 235, 236, 1);
+  box-shadow: 4px 4px 4px  #b38098;
+  border-radius: 5px;
+
+
+}
+h1{
+    font-size: 60px;
+}
+input {
+  
+    background : rgba(237, 188, 216, 1);
+    border-style : Solid;
+    border-color : rgba(128, 128, 128, 1);
+    border-width : 1px;
+    opacity : 0.8;
+    border-radius : 13px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+form div {
+    margin-top: 20px;
+}
+.list-item{
+    display: flex;
+    justify-content: center;
+}
+
+
+.list-item label{
+   width: 23%;
+   font-size: 20px;
+}
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+#buttons input{
+    outline: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+#buttons button{
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background : rgba(237, 188, 216, 1);
+    border-style : Solid;
+    border-color : rgba(128, 128, 128, 1);
+    border-width : 1px;
+    opacity : 0.8;
+    border-radius : 13px;
+    text-decoration: none;
+
+}
+#buttons input:hover{
+    background : rgb(238, 172, 209);
+}
+#buttons button:hover{
+    background : rgb(238, 172, 209);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;  
+    text-align: center;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.shade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,.7);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transform: translateX(-100%);
+}
+.active{
+    animation:  anima .5s cubic-bezier(.67,.11,0,1.75) forwards;
+}
+
+.content{
+    position: relative;
+    width:800px;
+    background-color: #E0B4C5;
+    padding: 80px 50px;
+    box-sizing: border-box;    
+    border: 3px solid #fff;
+}
+.content span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    color: #333;
+    font-family: 'Mansalva', cursive;
+    font-size: 30px;
+}
+.content p{
+    line-height: 2;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.content p i{
+    font-style: normal;
+    background-color: rgb(252, 217, 237);
+}
+@keyframes anima{
+    0%{
+
+        transform:translateX(-100%) scale(0);
+    }
+    100%{
+        visibility: visible;
+        transform:translateX(0) scale(1);
+    }
+}
