@@ -215,3 +215,12 @@ li {
     font-size: 25px;
     color: #666;
 }
+footer a {
+    text-decoration: none;
+    color: black;
+    margin: auto;
+}
+
+footer a:hover {
+    color: rgb(243, 200, 200);
+}
