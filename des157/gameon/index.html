@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME ON</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-con">
+            <div class="palyer-con">
+            </div>
+        </div>
+        <div class="center-con">
+            <h1>V.S</h1>
+            <div class="img-box">
+                <img src="./1di11.jpg" alt="">
+                <img src="./1di11.jpg" alt="">
+            </div>
+
+            <div class="text-box">
+                <button class="rest">restart</button>
+                <p class="text"></p>
+            </div>
+
+        </div>
+        <div class="right-con">
+            <div class="palyer-con">
+            </div>
+        </div>
+    </div>
+    <div class="mask">
+        <h1>Game of PIG</h1>
+        There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current
+        player's score, unless either die comes up as a “one”. If this happens, this player's turn is over, and it is
+        the other player’s turn. After each roll, the current player can either roll again, (assuming a “one” was not
+        rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first
+        player to get 30 points or higher wins.
+
+        Oh, and if you roll two “ones” (snake eyes), your current score gets zeroed out. So don’t do that.
+        <span class="start"> START</span>
+    </div>
+    <div class="input-mask">
+        <div class="input-group">
+            <label>Player 1:</label>
+            <input type="text" name="name" id="name1" >
+        </div>
+        <div class="input-group">
+            <label>Player 2:</label>
+            <input type="text" name="name" id="name2">
+        </div>
+
+        <button class="next">next step</button>
+
+    </div>
+
+    <footer>
+        <a href="mailto:&#113;&#104;&#122;&#104;&#117;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">CONTACT ME</a> |
+        <a href="https://validator.w3.org/check?url=referer">VALID HTML 5</a> |
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">VALID CSS</a>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
