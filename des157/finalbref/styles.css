@@ -1,0 +1,67 @@
+body{
+    background-color: black;
+}
+
+header{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: rgb(236, 150, 179);
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+h1{
+    font-size: 80px;
+    text-shadow:-4px -4px #91669b;
+}
+
+section {
+    background-color: rgb(245, 224, 243);
+    box-shadow: -8px -6px  #91669b;
+    margin:auto;
+    margin-top: 60px;
+    border-radius: 10px;
+    padding: 30px 40px 30px 40px;
+    
+}
+
+#grid {
+    margin: auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: 32% 32% 32%;
+    grid-column-gap: 40px;
+}
+
+p{
+    line-height: 1.8;
+    font-size: 18px;
+    color:rgb(70, 69, 69)
+}
+
+a{
+    text-decoration: none;
+}
+.button{
+    margin-bottom: 30px;
+    border-style: dashed rgb(241, 190, 235) ;
+    background-color: rgb(242, 178, 235);
+    border-radius: 25px;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+
+
+}
+footer{
+    width: 800px;
+    height: fit-content;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+}
+footer a{
+    color: white;
+}
