@@ -1,0 +1,226 @@
+body,
+h1,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+}
+
+.ticket—list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.ticket—list li {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 250px;
+    height: 550px;
+    transform-origin: center bottom;
+    cursor: pointer;
+    background-size: contain;
+    transition-duration: .6s;
+    background-repeat: no-repeat;
+}
+
+.ticket—list li:nth-child(1) {
+    transform: rotate(-55deg) translateY(-50px);
+    z-index: 9;
+    background-image: url(./imag/p1.png);
+}
+
+.ticket—list li:nth-child(1):hover {
+    transform: rotate(-55deg) translateY(-50px) scale(1.02);
+}
+
+.ticket—list li:nth-child(2) {
+    transform: rotate(-25deg) translateY(-50px);
+    z-index: 8;
+    background-image: url(./imag/p2.png);
+}
+
+.ticket—list li:nth-child(2):hover {
+    transform: rotate(-25deg) translateY(-50px) scale(1.02);
+}
+
+.ticket—list li:nth-child(3) {
+    transform: rotate(-5deg) translateY(-50px);
+    z-index: 7;
+    background-image: url(./imag/p3.png);
+
+}
+
+.ticket—list li:nth-child(3):hover {
+    transform: rotate(-5deg) translateY(-50px) scale(1.02);
+}
+
+.ticket—list li:nth-child(4) {
+    transform: rotate(20deg) translateY(-50px);
+    z-index: 6;
+    background-image: url(./imag/p4.png);
+
+}
+
+.ticket—list li:nth-child(4):hover {
+    transform: rotate(20deg) translateY(-50px) scale(1.02);
+}
+
+.ticket—list li:nth-child(5) {
+    transform: rotate(45deg) translateY(-50px);
+    z-index: 5;
+    background-image: url(./imag/p5.png);
+
+}
+
+.ticket—list li:nth-child(5):hover {
+    transform: rotate(45deg) translateY(-50px) scale(1.02);
+}
+
+.ticket—list li:nth-child(6) {
+    transform: rotate(65deg) translateY(-50px);
+    z-index: 4;
+    background-image: url(./imag/p6.png);
+
+}
+
+.ticket—list li:nth-child(6):hover {
+    transform: rotate(65deg) translateY(-50px) scale(1.02);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    overflow: auto;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.overlay-content {
+    position: relative;
+    width: 900px;
+    height: 700px;
+    transform: scale(0);
+    transition-duration: .6s;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.overlay-content.active {
+    transform: scale(1);
+}
+
+.overlay-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    padding: 60px 80px;
+    box-sizing: border-box;
+
+}
+
+.overlay-item.active {
+    display: block;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #373784;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.overlay-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.overlay-title img {
+    width: 120px;
+}
+
+.overlay-title h1 {
+    font-size: 45px;
+    color: #373784
+}
+
+.overlay-photo {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(168, 111, 217, .6);
+    margin: 20px 0;
+}
+
+.overlay-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    width: 100%;
+    text-align: center;
+
+}
+
+.overlay-text p {
+    padding: 10px 0;
+    font-size: 25px;
+    color: #666;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    margin: auto;
+}
+
+footer a:hover {
+    color: rgb(243, 200, 200);
+}
