@@ -15,6 +15,16 @@ h1{
     text-shadow:-4px -4px #91669b;
 }
 
+.inter {
+    margin: auto;
+    text-align: center;
+}
+.notes {
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
 article {
     margin:auto;
     background-color: rgb(245, 224, 243);
